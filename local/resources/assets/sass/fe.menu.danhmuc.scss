@@ -1,0 +1,76 @@
+#menu-danhmuc{
+  h3{
+    background-color: #F68C22;
+    font-size: 15px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #F68C22;
+    span{
+      color: white;
+    }
+    span:before{
+      content: "\f00b";
+      padding: 10px;
+      background-color: #706363;
+      color: #fff;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: translate(0, 0);
+      margin-right: 10px;
+    }
+  }
+  ul{
+    display: block;
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      a{
+        float: none;
+        font-size: 14px;
+        border-bottom: 1px solid #fff;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+        background-color: #E7E8EA;
+        transition: background-color 1s ease-out;
+      }
+      a:hover{
+        color: white;
+        background-color: #F68C22!important;
+      }
+      a:before{
+        content: "\f111";
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+        margin-right: 5px;
+      }
+      //a:after{
+      //  content: "\f101";
+      //  display: inline-block;
+      //  font: normal normal normal 14px/1 FontAwesome;
+      //  font-size: inherit;
+      //  text-rendering: auto;
+      //  -webkit-font-smoothing: antialiased;
+      //  -moz-osx-font-smoothing: grayscale;
+      //  transform: translate(0, 0);
+      //  float: right;
+      //}
+    }
+
+  }
+}

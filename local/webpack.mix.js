@@ -10,6 +10,54 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+////////////////////////KHỞI TẠO////////////////////////////////////////////////////////////////
+mix.styles([
+    'bower_components/jquery/dist/jquery.min.js',
+    'bower_components/bootstrap/dist/js/bootstrap.min.js',
+], '../js/core.common.js')
+    .styles([
+        'bower_components/bootstrap/dist/css/bootstrap.min.css',
+        'bower_components/font-awesome/css/font-awesome.min.css',
+    ], '../css/core.common.css')
+    .copy([
+        'bower_components/bootstrap/fonts/**',
+        'bower_components/font-awesome/fonts/**'
+    ], '../fonts')
+    .styles([
+        'bower_components/nivo-slider/nivo-slider.css',
+    ], '../css/core.frontend.css')
+    .sass('resources/assets/sass/frontend.scss', '../../css/frontend.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})
+    .styles([
+        'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
+    ], '../js/core.frontend.js')
+    .copy([
+        'bower_components/nivo-slider/themes',
+    ], '../css/themes', false)
+    .styles('resources/assets/js/scripts.js', '../js/scripts.js')
+    .styles([
+        'bower_components/AdminLTE/dist/css/AdminLTE.min.css',
+        'bower_components/AdminLTE/dist/css/skins/skin-blue.min.css'
+    ], '../css/core.backend.css')
+    .styles([
+        'bower_components/AdminLTE/dist/js/app.min.js',
+    ], '../js/core.backend.js')
+    .styles([
+        'bower_components/bootstrap-toggle/css/bootstrap-toggle.min.css',
+    ], '../css/bootstrap-toggle.min.css')
+    .styles([
+        'bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js',
+    ], '../js/bootstrap-toggle.min.js')
+// CKEDITOR CHỈ CHẠY ĐOẠN NÀY 1 LẦN
+// ===================
+// .copy('bower_components/ckeditor/adapters', '../js/ckeditor/adapters',false)
+// .copy('bower_components/ckeditor/lang', '../js/ckeditor/lang',false)
+// .copy('bower_components/ckeditor/skins', '../js/ckeditor/skins',false)
+// .copy([
+//     'bower_components/ckeditor/ckeditor.js',
+//     'bower_components/ckeditor/config.js',
+//     'bower_components/ckeditor/contents.css',
+//     'bower_components/ckeditor/styles.js'
+// ], '../js/ckeditor',false)
+// .copy('bower_components/ckeditor/plugins', '../js/ckeditor/plugins',false)
+////////////////////////////////////////////////////////////////////////////////////////////////

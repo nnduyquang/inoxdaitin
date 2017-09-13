@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/',function(){
+    return view('frontend.trangchu.index');
+});
+Route::get('/category',function(){
+    return view('frontend.menu.m-category');
 });

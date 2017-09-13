@@ -1,0 +1,28 @@
+#menu-ngang {
+  background-color: #F68C22;
+  margin-bottom: 20px;
+  ul.menu-detail {
+    display: block;
+    float: left;
+    li {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        padding: 15px 25px 10px;
+        display: block;
+        color: #fff;
+        transition: all 0.2s ease-in-out 0s;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      a:hover {
+        background-color: #706363;
+      }
+    }
+  }
+  ul.menu-search{
+    display: block;
+    float: right ;
+  }
+}
