@@ -23,6 +23,8 @@
         <div class="container">
             <div class="row">
                 @include('frontend.trangchu.sanpham')
+                @include('frontend.trangchu.tintuc')
+                @include('frontend.trangchu.lienhe')
             </div>
         </div>
     </div>

@@ -1,32 +1,32 @@
 #footer {
-  margin-top: 15px;
-  .f-hotline {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    background-color: #f47d18;
-    color: white;
-    span {
-      font-size: 20px;
-    }
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #333;
+  margin-top: 20px;
+  h3{
+    color: #F68A1F;
+    text-transform: uppercase;
+    font: bold 13px Arial;
+    border-bottom: 1px solid #F68A1F;
+    padding-bottom: 5px;
   }
-  .f-wrap-info{
-    background-color: #3f3f3f;
-    color:white;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    .f-img-logo{
-      width: 100%;
-    }
+  a{
+    display: block;
+    margin: 4px 0;
+    color: #979696;
   }
-  .f-bottom {
-    background-color: #2f2f2f;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: right;
-    span {
-      color: white;
-      display: block;
-      width: 100%;
-    }
+  a:before{
+    content: "\f101";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    margin-right: 5px;
+    color: #F68A1F;
   }
 }

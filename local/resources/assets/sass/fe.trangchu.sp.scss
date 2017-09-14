@@ -1,5 +1,6 @@
-#tc-sanpham{
-  h3.header-title{
+.tc-sanpham {
+  margin-top: 20px;
+  h3.header-title {
     font-size: 15px;
     line-height: 1.8;
     text-transform: uppercase;
@@ -7,12 +8,12 @@
     font-family: Tahoma;
     border-bottom: 1px solid #F68C22;
     margin-top: 10px;
-    span{
+    span {
       color: #444;
       display: inline-block;
       padding: 0 10px 0 0;
     }
-    span:before{
+    span:before {
       content: "\f00b";
       padding: 10px;
       background-color: #706363;
@@ -25,6 +26,68 @@
       -moz-osx-font-smoothing: grayscale;
       transform: translate(0, 0);
       margin-right: 10px;
+    }
+    a {
+      float: right;
+      margin-right: 10px;
+    }
+  }
+  .tc-list-sp {
+    margin-top: 20px;
+    .tc-one-sp {
+      a {
+        .tc-one-sp-img {
+          width: 100%;
+          height: 170px;
+
+        }
+        .tc-one-sp-info {
+          display: block;
+          text-align: center;
+          h3 {
+            font-weight: bold;
+            color: #444;
+            display: block;
+            font-size: 12px;
+            margin: 5px 0;
+          }
+          span {
+            font-weight: bold;
+            font-size: 16px;
+            font-family: Tahoma;
+            color: #E62534;
+            border: none;
+          }
+        }
+        .tc-one-sp-btn {
+          background: #706363;
+          color: #fff;
+          border-radius: 0;
+          padding: 0 10px 0 0;
+          font-size: 13px;
+          display: block;
+          overflow: hidden;
+          line-height: 2.8;
+          text-align: center;
+          border: 3px double #fff;
+          font-weight: bold;
+        }
+        .tc-one-sp-btn:before {
+          content: "\f101";
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          transform: translate(0, 0);
+          padding: 11px;
+          background: #F68A1F;
+          margin-right: 5px;
+          font-size: 16px;
+          float: left;
+        }
+      }
     }
   }
 }

@@ -1,3 +1,23 @@
+#top-info {
+  background-color: #E7E8EA;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+  font-size: 15px;
+  .top-info-left{
+    float: left;
+  }
+  .top-info-left{
+    float: right;
+  }
+}
+
+#logo-top {
+  img.logo-img {
+    width: 100%;
+  }
+}
+
 #menu-ngang {
   background-color: #F68C22;
   margin-bottom: 20px;
@@ -21,8 +41,40 @@
       }
     }
   }
-  ul.menu-search{
+  ul.menu-search {
     display: block;
-    float: right ;
+    float: right;
+    height: 45px;
+    li {
+      display: inline-block;
+      float: left;
+      input {
+        height: 45px;
+        float: right;
+        width: 200px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: #706363;
+        color: white;
+        border: none;
+      }
+      a{
+        padding: 15px;
+        background-color: #5E5555;
+        color: #fff;
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        height: 45px;
+        float: left;
+      }
+    }
   }
 }
