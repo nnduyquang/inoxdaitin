@@ -28,6 +28,8 @@ mix.styles([
     ], '../css/core.frontend.css')
     .sass('resources/assets/sass/frontend.scss', '../../css/frontend.css').options({processCssUrls: false})
     .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/fe.sidebar.scss', '../../css/fe.sidebar.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/fe.sanpham.chitiet.scss', '../../css/fe.sanpham.chitiet.css').options({processCssUrls: false})
     .styles([
         'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
     ], '../js/core.frontend.js')

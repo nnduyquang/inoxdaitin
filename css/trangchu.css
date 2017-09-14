@@ -43,6 +43,10 @@
   margin-top: 20px;
 }
 
+.tc-sanpham .tc-list-sp .tc-one-sp {
+  margin-bottom: 10px;
+}
+
 .tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-img {
   width: 100%;
   height: 170px;

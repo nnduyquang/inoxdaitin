@@ -2,6 +2,7 @@
 @section('styles')
     {{ Html::style('css/trangchu.css') }}
     {{ Html::style('css/fe.sidebar.css') }}
+    {{ Html::style('css/fe.sanpham.chitiet.css') }}
 @stop
 @section('scripts')
 @stop
@@ -14,7 +15,7 @@
         @include('frontend.sidebar.index')
     </div>
     <div class="col-md-8">
-        @include('frontend.sanpham.sanpham')
+        @include('frontend.chitiet.chitiet')
     </div>
     @include('frontend.trangchu.lienhe')
 @stop
