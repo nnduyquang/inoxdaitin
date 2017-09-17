@@ -2,7 +2,13 @@
     "/../../css/frontend.css": "/../../css/frontend.css",
     "/../../css/trangchu.css": "/../../css/trangchu.css",
     "/../../css/fe.sidebar.css": "/../../css/fe.sidebar.css",
+    "/../../css/fe.lienhe.css": "/../../css/fe.lienhe.css",
     "/../../css/fe.sanpham.chitiet.css": "/../../css/fe.sanpham.chitiet.css",
+    "/../../css/be.category.css": "/../../css/be.category.css",
+    "/../../css/be.product.css": "/../../css/be.product.css",
+    "/../../css/be.config.slider.css": "/../../css/be.config.slider.css",
+    "/../../css/fe.tintuc.css": "/../../css/fe.tintuc.css",
+    "/../../css/fe.tintuc.detail.css": "/../../css/fe.tintuc.detail.css",
     "/E:/xampp/htdocs/inoxdaitin/js/core.common.js": "/E:/xampp/htdocs/inoxdaitin/js/core.common.js",
     "/E:/xampp/htdocs/inoxdaitin/css/core.common.css": "/E:/xampp/htdocs/inoxdaitin/css/core.common.css",
     "/E:/xampp/htdocs/inoxdaitin/fonts/glyphicons-halflings-regular.eot": "/E:/xampp/htdocs/inoxdaitin/fonts/glyphicons-halflings-regular.eot",
@@ -22,5 +28,13 @@
     "/E:/xampp/htdocs/inoxdaitin/css/core.backend.css": "/E:/xampp/htdocs/inoxdaitin/css/core.backend.css",
     "/E:/xampp/htdocs/inoxdaitin/js/core.backend.js": "/E:/xampp/htdocs/inoxdaitin/js/core.backend.js",
     "/E:/xampp/htdocs/inoxdaitin/css/bootstrap-toggle.min.css": "/E:/xampp/htdocs/inoxdaitin/css/bootstrap-toggle.min.css",
-    "/E:/xampp/htdocs/inoxdaitin/js/bootstrap-toggle.min.js": "/E:/xampp/htdocs/inoxdaitin/js/bootstrap-toggle.min.js"
+    "/E:/xampp/htdocs/inoxdaitin/js/bootstrap-toggle.min.js": "/E:/xampp/htdocs/inoxdaitin/js/bootstrap-toggle.min.js",
+    "/E:/xampp/htdocs/inoxdaitin/js/login.js": "/E:/xampp/htdocs/inoxdaitin/js/login.js",
+    "/E:/xampp/htdocs/inoxdaitin/js/ulti.js": "/E:/xampp/htdocs/inoxdaitin/js/ulti.js",
+    "/E:/xampp/htdocs/inoxdaitin/css/login.css": "/E:/xampp/htdocs/inoxdaitin/css/login.css",
+    "/E:/xampp/htdocs/inoxdaitin/js/be.config.slider.js": "/E:/xampp/htdocs/inoxdaitin/js/be.config.slider.js",
+    "/E:/xampp/htdocs/inoxdaitin/js/be.config.js": "/E:/xampp/htdocs/inoxdaitin/js/be.config.js",
+    "/E:/xampp/htdocs/inoxdaitin/js/be.news.js": "/E:/xampp/htdocs/inoxdaitin/js/be.news.js",
+    "/E:/xampp/htdocs/inoxdaitin/js/be.category.js": "/E:/xampp/htdocs/inoxdaitin/js/be.category.js",
+    "/E:/xampp/htdocs/inoxdaitin/js/be.product.js": "/E:/xampp/htdocs/inoxdaitin/js/be.product.js"
 }

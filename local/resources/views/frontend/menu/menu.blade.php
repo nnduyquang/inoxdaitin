@@ -19,8 +19,8 @@
             <li><a href="{{URL::to('/')}}">Trang Chủ</a></li>
             <li><a href="">Giới Thiệu</a></li>
             <li><a href="{{URL::to('san-pham')}}">Sản Phẩm</a></li>
-            <li><a href="">Tin Tức</a></li>
-            <li><a href="">Liên Hệ</a></li>
+            <li><a href="{{URL::to('tin-tuc')}}">Tin Tức</a></li>
+            <li><a href="{{URL::to('lien-he')}}">Liên Hệ</a></li>
         </ul>
         <ul class="menu-search">
             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
