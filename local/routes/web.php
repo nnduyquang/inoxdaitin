@@ -19,6 +19,7 @@ Route::get('/san-pham/{pathCateGory}','FrontendController@getListCategory');
 Route::get('/san-pham/{pathCateGory}/{pathProduct}','FrontendController@getDetailSP');
 Route::get('/lien-he','FrontendController@getLienHe');
 Route::get('/tin-tuc','FrontendController@getAllTinTuc');
+Route::get('/tim-kiem','FrontendController@getKetQuaTinKiem');
 Route::get('/tin-tuc/{path}','FrontendController@getDetailTinTuc');
 Route::get('/category',function(){
     return view('frontend.menu.m-category');

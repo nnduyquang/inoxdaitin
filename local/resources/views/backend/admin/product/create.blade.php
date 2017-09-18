@@ -15,7 +15,7 @@
                 <h2>Tạo Mới Sản Phẩm</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('category.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('product.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -32,47 +32,50 @@
     {!! Form::open(array('route' => 'product.store','method'=>'POST')) !!}
     <div class="row">
         <div class="col-md-6">
-            <div class="form-group">
-                <strong>Tên Loại Sản Phẩm:</strong>
-                {!! Form::text('name', null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
-            </div>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6">
-            <div class="form-group">
-                <strong>Hình Đại Diện: </strong>
-                {!! Form::text('image', null, array('class' => 'form-control','id'=>'path')) !!}
-                {!! Form::button('Browses', array('id' => 'btnBrowse','class'=>'btn btn-primary')) !!}
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <div class="form-group">
-                        {{ Html::image('','',array('id'=>'showHinhSanPham','class'=>'showHinhSanPham'))}}
-                    </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <strong>Tên Loại Sản Phẩm:</strong>
+                    {!! Form::text('name', null, array('placeholder' => 'Tên','class' => 'form-control')) !!}
                 </div>
-
             </div>
-        </div>
-
-        <div class="col-xs-6 col-sm-6 col-md-6">
-            <div class="form-group">
-                <strong>Kích Hoạt:</strong>
-                <input name="product_is_active" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
-                <div class="col-md-2">
-                    <div class="form-group">
-                        <strong>Thứ tự:</strong>
-                        {!! Form::text('product_order', null, array('placeholder' => 'Thứ Tự','class' => 'form-control')) !!}
-                    </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <strong>Thứ tự:</strong>
+                    {!! Form::text('product_order', null, array('placeholder' => 'Thứ Tự','class' => 'form-control')) !!}
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <strong>Kích Hoạt:</strong>
+                    <input name="product_is_active" data-on="Có" data-off="Không" type="checkbox" data-toggle="toggle">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <strong>Loại Sản Phẩm:</strong><br>
+                    @foreach($categories as $key=>$category)
+                            <div class="col-md-6">
+                                {{ Form::radio('idCategory', $category->id) }}{{ $category->name}}</br>
+                            </div>
+                    @endforeach
                 </div>
             </div>
         </div>
+        <div class="col-md-6">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Hình Đại Diện: </strong>
+                    {!! Form::text('image', null, array('class' => 'form-control','id'=>'path')) !!}
+                    {!! Form::button('Browses', array('id' => 'btnBrowse','class'=>'btn btn-primary')) !!}
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
+                            {{ Html::image('','',array('id'=>'showHinhSanPham','class'=>'showHinhSanPham'))}}
+                        </div>
+                    </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-6">
-            <div class="form-group">
-                <strong>Loại Sản Phẩm:</strong><br>
-                @foreach($categories as $key=>$category)
-                    {{ Form::radio('idCategory', $category->id) }}{{ $category->name}}</br>
-                @endforeach
+                </div>
             </div>
         </div>
-
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Mô Tả:</strong>

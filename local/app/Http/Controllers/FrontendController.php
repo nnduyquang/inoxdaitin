@@ -65,4 +65,7 @@ class FrontendController extends Controller
         $categories = Category::all()->sortBy('category_order');
         return view('frontend.tintuc.detail', compact('categories', 'newdetais','news'));
     }
+    public function getKetQuaTinKiem(Request $request){
+        
+    }
 }

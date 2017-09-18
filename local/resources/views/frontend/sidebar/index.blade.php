@@ -1,11 +1,11 @@
-<div id="sb-facebook" class="col-md-12">
+<div id="sb-facebook" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         <h3 class="header-title">
             <span><a href="#">Fanpage</a></span>
         </h3>
     </div>
 </div>
-<div id="sb-tintuc" class="col-md-12">
+<div id="sb-tintuc" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         <h3 class="header-title">
             <span><a href="#">Tin Tức</a></span>

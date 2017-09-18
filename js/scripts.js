@@ -1,6 +1,7 @@
 var plugins = {
     menu: $('.sidebar'),
     slider1: $('#slider1'),
+
 };
 $(document).ready(function () {
     function sidebar() {
@@ -28,6 +29,17 @@ $(document).ready(function () {
             controlNav: false,
         });
     }
+    function fixOnScroll(){
+        var menuScroll=$('#menu-ngang-scroll');
+        $(window).on("scroll", function (e) {
+            if ($(this).scrollTop() > 792) {
+                menuScroll.css('display','block');
+            } else {
+                menuScroll.css('display','none');
+            }
+        });
+    }
+    fixOnScroll();
     sidebar();
     if (plugins.slider1.length) {
         runSlider1();

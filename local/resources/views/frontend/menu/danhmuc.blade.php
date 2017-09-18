@@ -1,4 +1,4 @@
-<div id="menu-danhmuc" class="col-md-12">
+<div id="menu-danhmuc" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         <h3><span>Danh Mục Sản Phẩm</span></h3>
         <ul>

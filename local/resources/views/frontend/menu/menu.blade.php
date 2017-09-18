@@ -13,7 +13,7 @@
         </div>
     </div>
 </div>
-<div id="menu-ngang" class="col-md-12">
+<div id="menu-ngang" class="col-md-12 hidden-sm hidden-xs">
     <div class="container">
         <ul class="menu-detail">
             <li><a href="{{URL::to('/')}}">Trang Chủ</a></li>
@@ -25,6 +25,26 @@
         <ul class="menu-search">
             <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
             <li> {!! Form::text('search', '', array('placeholder' => 'Tìm Kiếm','class' => 'form-control')) !!}</li>
+        </ul>
+    </div>
+</div>
+<div id="menu-ngang-scroll" class="col-md-12 navbar-fixed-top hidden-sm hidden-xs" style="display: none">
+    <div class="container">
+        <ul class="menu-detail">
+            <li><a href="{{URL::to('/')}}">DANH SÁCH SẢN PHẨM</a>
+                <ul class="sub-menu">
+                    @foreach($categories as $key=>$data)
+                        <li><a href="{{URL::to('san-pham/'.$data->path)}}">{{$data->name}}</a></li>
+                    @endforeach
+                </ul>
+            </li>
+        </ul>
+        <ul class="menu-search">
+            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li> {!! Form::text('search', '', array('placeholder' => 'Tìm Kiếm','class' => 'form-control')) !!}</li>
+        </ul>
+        <ul class="menu-detail pull-right">
+            <li><a href="{{URL::to('lien-he')}}">Liên Hệ: 0975.24.24.24 - Anh Dũng</a></li>
         </ul>
     </div>
 </div>
