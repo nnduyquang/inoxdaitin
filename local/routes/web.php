@@ -17,13 +17,12 @@
 Route::get('/','FrontendController@getAllSPTrangChu');
 Route::get('/san-pham/{pathCateGory}','FrontendController@getListCategory');
 Route::get('/san-pham/{pathCateGory}/{pathProduct}','FrontendController@getDetailSP');
+Route::get('/category', 'FrontendController@getFrontendContentCategory');
 Route::get('/lien-he','FrontendController@getLienHe');
+Route::get('/gioi-thieu','FrontendController@getGioiThieu');
 Route::get('/tin-tuc','FrontendController@getAllTinTuc');
-Route::get('/tim-kiem','FrontendController@getKetQuaTinKiem');
+Route::post('/tim-kiem','FrontendController@getKetQuaTinKiem')->name('search');
 Route::get('/tin-tuc/{path}','FrontendController@getDetailTinTuc');
-Route::get('/category',function(){
-    return view('frontend.menu.m-category');
-});
 Route::get('/sml_login', function () {
     return view('backend.login.login1');
 });
@@ -78,4 +77,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('sml_admin/slider/{id}/edit', ['as' => 'config.slider.edit', 'uses' => 'SliderController@edit', 'middleware' => ['permission:config-edit']]);
     Route::patch('sml_admin/slider/{id}', ['as' => 'config.slider.update', 'uses' => 'SliderController@update', 'middleware' => ['permission:config-edit']]);
     Route::delete('sml_admin/slider/{id}', ['as' => 'config.slider.destroy', 'uses' => 'SliderController@destroy', 'middleware' => ['permission:config-delete']]);
+
+    //POST
+    Route::get('sml_admin/posts/gioi-thieu', ['as' => 'posts.gioithieu.index', 'uses' => 'PostController@getPostGioiThieuContent']);
+    Route::post('sml_admin/posts/gioi-thieu', ['as' => 'posts.gioithieu.store', 'uses' => 'PostController@savePostGioiThieuContent']);
 });

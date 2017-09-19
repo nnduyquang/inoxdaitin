@@ -29,19 +29,31 @@ $(document).ready(function () {
             controlNav: false,
         });
     }
-    function fixOnScroll(){
-        var menuScroll=$('#menu-ngang-scroll');
+
+    function fixOnScroll() {
+        var menuScroll = $('#menu-ngang-scroll');
         $(window).on("scroll", function (e) {
             if ($(this).scrollTop() > 792) {
-                menuScroll.css('display','block');
+                menuScroll.css('display', 'block');
             } else {
-                menuScroll.css('display','none');
+                menuScroll.css('display', 'none');
             }
         });
     }
+
     fixOnScroll();
     sidebar();
     if (plugins.slider1.length) {
         runSlider1();
     }
+    $("#searchInput").keyup(function (e) {
+        if (e.keyCode == 13) {
+            if ($("#searchInput").val().trim() != '')
+                $('#formSearch').submit();
+        }
+    });
+    $('#clickSearch').click(function () {
+        if ($("#searchInput").val().trim() != '')
+            $('#formSearch').submit();
+    });
 });

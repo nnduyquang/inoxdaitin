@@ -1,8 +1,8 @@
-.tc-sanpham {
+.tc-sanpham, .tc-timkiem {
   margin-top: 20px;
 }
 
-.tc-sanpham h3.header-title {
+.tc-sanpham h3.header-title, .tc-timkiem h3.header-title {
   font-size: 15px;
   line-height: 1.8;
   text-transform: uppercase;
@@ -12,13 +12,13 @@
   margin-top: 10px;
 }
 
-.tc-sanpham h3.header-title span {
+.tc-sanpham h3.header-title span, .tc-timkiem h3.header-title span {
   color: #444;
   display: inline-block;
   padding: 0 10px 0 0;
 }
 
-.tc-sanpham h3.header-title span:before {
+.tc-sanpham h3.header-title span:before, .tc-timkiem h3.header-title span:before {
   content: "\F00B";
   padding: 10px;
   background-color: #706363;
@@ -34,38 +34,39 @@
   margin-right: 10px;
 }
 
-.tc-sanpham h3.header-title a {
+.tc-sanpham h3.header-title a, .tc-timkiem h3.header-title a {
   float: right;
   margin-right: 10px;
 }
 
-.tc-sanpham .tc-list-sp {
+.tc-sanpham .tc-list-sp, .tc-timkiem .tc-list-sp {
   margin-top: 20px;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp {
+.tc-sanpham .tc-list-sp .tc-one-sp, .tc-timkiem .tc-list-sp .tc-one-sp {
   margin-bottom: 10px;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-img {
+.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-img, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-img {
   width: 100%;
   height: 170px;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-info {
+.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-info, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-info {
   display: block;
   text-align: center;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-info h3 {
+.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-info h3, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-info h3 {
   font-weight: bold;
   color: #444;
   display: block;
   font-size: 12px;
   margin: 5px 0;
+  height: 25px;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-info span {
+.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-info span, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-info span {
   font-weight: bold;
   font-size: 16px;
   font-family: Tahoma;
@@ -73,7 +74,7 @@
   border: none;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-btn {
+.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-btn, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-btn {
   background: #706363;
   color: #fff;
   border-radius: 0;
@@ -87,7 +88,7 @@
   font-weight: bold;
 }
 
-.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-btn:before {
+.tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-btn:before, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-btn:before {
   content: "\F101";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;

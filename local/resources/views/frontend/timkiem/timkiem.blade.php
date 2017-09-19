@@ -8,7 +8,7 @@
             <div class="row">
                 @foreach($products as $key=>$data)
                     <div class="col-md-3 tc-one-sp">
-                        <a href="{{URL::to('san-pham/'.$category->path.'/'.$data->path)}}">
+                        <a href="{{URL::to('san-pham/'.$data->category->path.'/'.$data->path)}}">
                             {{ Html::image($data->image,'',array('class'=>'tc-one-sp-img')) }}
                             <div class="tc-one-sp-info">
                                 <h3>{{$data->name}}</h3>
@@ -24,3 +24,4 @@
             </div>
         </div>
     </div>
+</div>

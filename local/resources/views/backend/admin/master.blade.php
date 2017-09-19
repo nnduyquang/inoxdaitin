@@ -249,12 +249,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            {{--<li><a href="{{ route('posts.trangchu.index') }}">Trang Chủ</a></li>--}}
+                            <li><a href="{{ route('posts.gioithieu.index') }}">Giới Thiệu</a></li>
                             {{--<li><a href="{{ route('posts.vitri.index') }}">Vị Trí</a></li>--}}
                             {{--<li><a href="{{ route('posts.canho.index') }}">Căn Hộ</a></li>--}}
                             {{--<li><a href="{{ route('posts.thietke.index') }}">Thiết Kế</a></li>--}}
                             {{--<li><a href="{{ route('posts.tienich.index') }}">Tiện Ích</a></li>--}}
-                            <li><a href="#">Giới Thiệu</a></li>
                         </ul>
                     </li>
 

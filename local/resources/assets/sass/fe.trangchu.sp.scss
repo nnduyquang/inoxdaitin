@@ -1,4 +1,4 @@
-.tc-sanpham,tc-timkiem {
+.tc-sanpham, .tc-timkiem {
   margin-top: 20px;
   h3.header-title {
     font-size: 15px;
@@ -34,8 +34,14 @@
   }
   .tc-list-sp {
     margin-top: 20px;
+    //display: flex;
+    //flex-wrap: wrap;
+    //width: 100%;
+    //float: left;
     .tc-one-sp {
       margin-bottom: 10px;
+      //flex-direction: column-reverse;
+      //display: flex;
       a {
         .tc-one-sp-img {
           width: 100%;
@@ -51,6 +57,7 @@
             display: block;
             font-size: 12px;
             margin: 5px 0;
+            height: 25px;
           }
           span {
             font-weight: bold;

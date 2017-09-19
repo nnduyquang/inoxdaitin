@@ -1,4 +1,4 @@
-<div id="top-info" class="col-md-12">
+<div id="top-info" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         <div class="container">
             <span class="top-info-right">Liên Hệ: 0975.24.24.24 - Anh Dũng</span>
@@ -6,7 +6,7 @@
         </div>
     </div>
 </div>
-<div id="logo-top" class="col-md-12">
+<div id="logo-top" class="col-md-12 hidden-sm hidden-xs">
     <div class="row">
         <div class="container">
             {{ Html::image('images/logo/341.png','',array('class'=>'logo-img')) }}
@@ -17,14 +17,18 @@
     <div class="container">
         <ul class="menu-detail">
             <li><a href="{{URL::to('/')}}">Trang Chủ</a></li>
-            <li><a href="">Giới Thiệu</a></li>
+            <li><a href="{{URL::to('gioi-thieu')}}">Giới Thiệu</a></li>
             <li><a href="{{URL::to('san-pham')}}">Sản Phẩm</a></li>
             <li><a href="{{URL::to('tin-tuc')}}">Tin Tức</a></li>
             <li><a href="{{URL::to('lien-he')}}">Liên Hệ</a></li>
         </ul>
         <ul class="menu-search">
-            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-            <li> {!! Form::text('search', '', array('placeholder' => 'Tìm Kiếm','class' => 'form-control')) !!}</li>
+            <li><a href="#" id="clickSearch"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li>
+                {!! Form::open(array('route' => 'search','method'=>'POST','id'=>'formSearch')) !!}
+                {!! Form::text('key-search', '', array('placeholder' => 'Tìm Kiếm','class' => 'form-control','id'=>'searchInput')) !!}
+                {!! Form::close() !!}
+            </li>
         </ul>
     </div>
 </div>
@@ -40,8 +44,12 @@
             </li>
         </ul>
         <ul class="menu-search">
-            <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-            <li> {!! Form::text('search', '', array('placeholder' => 'Tìm Kiếm','class' => 'form-control')) !!}</li>
+            <li><a href="#" id="clickSearch"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li>
+                {!! Form::open(array('route' => 'search','method'=>'POST','id'=>'formSearch')) !!}
+                {!! Form::text('key-search', '', array('placeholder' => 'Tìm Kiếm','class' => 'form-control','id'=>'searchInput')) !!}
+                {!! Form::close() !!}
+            </li>
         </ul>
         <ul class="menu-detail pull-right">
             <li><a href="{{URL::to('lien-he')}}">Liên Hệ: 0975.24.24.24 - Anh Dũng</a></li>

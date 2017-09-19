@@ -30,6 +30,7 @@ mix.styles([
     .sass('resources/assets/sass/trangchu.scss', '../../css/trangchu.css').options({processCssUrls: false})
     .sass('resources/assets/sass/fe.sidebar.scss', '../../css/fe.sidebar.css').options({processCssUrls: false})
     .sass('resources/assets/sass/fe.lienhe.scss', '../../css/fe.lienhe.css').options({processCssUrls: false})
+    .sass('resources/assets/sass/fe.gioithieu.scss', '../../css/fe.gioithieu.css').options({processCssUrls: false})
     .sass('resources/assets/sass/fe.sanpham.chitiet.scss', '../../css/fe.sanpham.chitiet.css').options({processCssUrls: false})
     .styles([
         'bower_components/nivo-slider/jquery.nivo.slider.pack.js',
@@ -85,6 +86,9 @@ mix.styles([
         'resources/assets/js/be.category.js',
     ], '../js/be.category.js')
     .sass('resources/assets/sass/be.category.scss', '../../css/be.category.css')
+    .styles([
+        'resources/assets/js/be.posts.gioithieu.js',
+    ], '../js/be.posts.gioithieu.js')
     .styles([
         'resources/assets/js/be.product.js',
     ], '../js/be.product.js')

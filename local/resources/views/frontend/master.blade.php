@@ -27,10 +27,12 @@
     @include('frontend.menu.menu')
 
     {{--<div id="wrap-container">--}}
-    <div class="col-md-12">
-        <div class="container">
-            <div class="row">
-                @yield('container')
+    <div class="col-md-12 big-wrap" style="">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    @yield('container')
+                </div>
             </div>
         </div>
     </div>
@@ -56,7 +58,7 @@
     <div class="phone_animation">
         <div class="phone_animation_circle"></div>
         <div class="phone_animation_circle_fill"></div>
-        <a href="tel:0909633252" class="phone_animation_circle_fill_img"><i class="fa fa-phone" aria-hidden="true"></i></a>
+        <a href="tel:0975242424" class="phone_animation_circle_fill_img"><i class="fa fa-phone" aria-hidden="true"></i></a>
     </div>
 </div>
 </body>

@@ -20,11 +20,13 @@
         </div>
     </div>
     <div id="tc-content" class="col-md-12">
-        <div class="container">
-            <div class="row">
-                @include('frontend.trangchu.sanpham')
-                @include('frontend.trangchu.tintuc')
-                @include('frontend.trangchu.lienhe')
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    @include('frontend.trangchu.sanpham')
+                    @include('frontend.trangchu.tintuc')
+                    @include('frontend.trangchu.lienhe')
+                </div>
             </div>
         </div>
     </div>

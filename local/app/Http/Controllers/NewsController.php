@@ -143,7 +143,7 @@ class NewsController extends Controller
         foreach ($news as $data) {
             $data->content = cat_chuoi_dai_thanh_ngan(bo_the_html_trong_chuoi($data->content), 400);
         }
-        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $diachi=Config::whereIn('name',['cf-address-posts'])->first();
         $phone=Config::whereIn('name',['cf-phone'])->first();
         return view('frontend.tintuc.index', compact('news','diachi','phone'));
     }
@@ -151,7 +151,7 @@ class NewsController extends Controller
     public function getDetailNews($path)
     {
         $news = News::where('path', 'like','%'.$path.'%')->first();
-        $diachi=Config::whereIn('name',['cf-address-post'])->first();
+        $diachi=Config::whereIn('name',['cf-address-posts'])->first();
         $phone=Config::whereIn('name',['cf-phone'])->first();
         return view('frontend.tintuc.detail', compact('news','diachi','phone'));
     }
