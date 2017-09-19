@@ -64,7 +64,7 @@ class FrontendController extends Controller
         foreach ($news as $key => $data) {
             $data->content = cat_chuoi_dai_thanh_ngan(bo_the_html_trong_chuoi($data->content), 400);
         }
-        return view('frontend.tintuc.index', compact('categories', 'newalls', '$news'));
+        return view('frontend.tintuc.index', compact('categories', 'newalls', 'news'));
     }
 
     public function getDetailTinTuc($path)

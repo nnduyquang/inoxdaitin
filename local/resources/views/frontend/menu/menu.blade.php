@@ -18,7 +18,7 @@
         <ul class="menu-detail">
             <li><a href="{{URL::to('/')}}">Trang Chủ</a></li>
             <li><a href="{{URL::to('gioi-thieu')}}">Giới Thiệu</a></li>
-            <li><a href="{{URL::to('san-pham')}}">Sản Phẩm</a></li>
+            {{--<li><a href="{{URL::to('san-pham')}}">Sản Phẩm</a></li>--}}
             <li><a href="{{URL::to('tin-tuc')}}">Tin Tức</a></li>
             <li><a href="{{URL::to('lien-he')}}">Liên Hệ</a></li>
         </ul>

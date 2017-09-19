@@ -1,6 +1,6 @@
 <div id="tin-tuc" class="col-md-12">
     <div class="row">
-        @foreach($newalls as $key=>$data)
+        @foreach($news as $key=>$data)
             <div class="col-md-12 one-tt">
                 <div class="row">
                     <div class="col-md-3">
