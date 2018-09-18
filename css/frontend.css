@@ -243,18 +243,22 @@ This class is added to the container
 .nivoSlider {
   position: relative;
   width: 100%;
-  height: 528px;
+  height: auto;
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  -webkit-box-shadow: 0px 0px 0px transparent !important;
+          box-shadow: 0px 0px 0px transparent !important;
 }
 
 .nivoSlider img {
-  height: 100% !important;
+  width: 100% !important;
+  height: auto;
 }
 
 .nivo-main-image {
-  height: 100% !important;
+  width: 100% !important;
+  height: auto;
 }
 
 .slider-on-mobile {
@@ -317,7 +321,7 @@ This class is added to the container
   .nivoSlider {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: auto;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -328,7 +332,7 @@ This class is added to the container
   .nivoSlider {
     position: relative;
     width: 100%;
-    height: 528px;
+    height: auto;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
@@ -336,11 +340,11 @@ This class is added to the container
 }
 
 #top-info {
-  background-color: #E7E8EA;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bolder;
-  font-size: 15px;
+  background-size: cover;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 13px;
+  color: white;
 }
 
 #top-info .top-info-left {
@@ -351,13 +355,27 @@ This class is added to the container
   float: right;
 }
 
+#logo-top {
+  background-size: cover;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 #logo-top img.logo-img {
-  width: 100%;
+  width: 300px;
+  height: auto;
+  margin-top: 18px;
+}
+
+#logo-top img.logo-img2 {
+  width: 380px;
+  height: auto;
+  float: right;
 }
 
 #menu-ngang {
   background-color: #F68C22;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 #menu-ngang ul.menu-detail {
@@ -371,18 +389,21 @@ This class is added to the container
 
 #menu-ngang ul.menu-detail li a {
   text-decoration: none;
-  padding: 15px 25px 10px;
+  padding: 14px 25px 11px;
   display: block;
   color: #fff;
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
-  font-size: 13px;
+  font-size: 15px;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 #menu-ngang ul.menu-detail li a:hover {
-  background-color: #706363;
+  background-color: #626262;
+}
+
+#menu-ngang ul.menu-detail li a.active {
+  background-color: #626262;
 }
 
 #menu-ngang ul.menu-search {
@@ -496,7 +517,7 @@ This class is added to the container
 }
 
 #menu-ngang-scroll ul.menu-detail li a:hover {
-  background-color: #706363;
+  background-color: #626262;
 }
 
 #menu-ngang-scroll ul.menu-detail li:hover > ul.sub-menu {
@@ -547,9 +568,11 @@ This class is added to the container
   background-color: #F68C22;
   font-size: 15px;
   line-height: 1.8;
+  padding: 6px 20px 4px 10px;
+  text-align: center;
   text-transform: uppercase;
-  font-weight: bold;
-  border-bottom: 1px solid #F68C22;
+  border-left: 8px solid #706363;
+  position: relative;
 }
 
 #menu-danhmuc h3 span {
@@ -557,9 +580,12 @@ This class is added to the container
 }
 
 #menu-danhmuc h3 span:before {
-  content: "\F00B";
-  padding: 10px;
-  background-color: #706363;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 10px;
+  top: 0;
+  left: 0;
   color: #fff;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -589,7 +615,7 @@ This class is added to the container
   display: block;
   text-decoration: none;
   color: #444;
-  font-weight: bold;
+  text-transform: uppercase;
   background-color: #E7E8EA;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
@@ -601,7 +627,7 @@ This class is added to the container
 }
 
 #menu-danhmuc ul li a:before {
-  content: "\F111";
+  content: "\F261";
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -753,8 +779,10 @@ This class is added to the container
 #footer {
   height: 100%;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 20px;
   background: #333;
   margin-top: 20px;
 }
@@ -765,6 +793,7 @@ This class is added to the container
   font: bold 13px Arial;
   border-bottom: 1px solid #F68A1F;
   padding-bottom: 5px;
+  margin-bottom: 18px;
 }
 
 #footer a {
@@ -785,4 +814,29 @@ This class is added to the container
           transform: translate(0, 0);
   margin-right: 5px;
   color: #F68A1F;
+}
+
+#footer-infor {
+  text-align: center;
+  background-color: #1e1d1d;
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+#footer-infor p {
+  color: #999999;
+  padding-top: 6px;
+}
+
+#footer-infor ul {
+  list-style-type: none;
+}
+
+#footer-infor ul li {
+  display: inline-block;
+}
+
+#footer-infor ul li a {
+  color: #F68A1F;
+  padding: 0px 10px;
 }

@@ -7,11 +7,11 @@
             {{--@endforeach--}}
             {{ Html::image('images/sliders/1.jpg','',array('class'=>'slideshow')) }}
             {{ Html::image('images/sliders/2.jpg','',array('class'=>'slideshow')) }}
-            {{ Html::image('images/sliders/3.jpg','',array('class'=>'slideshow')) }}
-            {{ Html::image('images/sliders/4.jpg','',array('class'=>'slideshow')) }}
-            {{ Html::image('images/sliders/5.jpg','',array('class'=>'slideshow')) }}
-            {{ Html::image('images/sliders/6.jpg','',array('class'=>'slideshow')) }}
-            {{ Html::image('images/sliders/7.jpg','',array('class'=>'slideshow')) }}
+            {{--{{ Html::image('images/sliders/3.jpg','',array('class'=>'slideshow')) }}--}}
+            {{--{{ Html::image('images/sliders/4.jpg','',array('class'=>'slideshow')) }}--}}
+            {{--{{ Html::image('images/sliders/5.jpg','',array('class'=>'slideshow')) }}--}}
+            {{--{{ Html::image('images/sliders/6.jpg','',array('class'=>'slideshow')) }}--}}
+            {{--{{ Html::image('images/sliders/7.jpg','',array('class'=>'slideshow')) }}--}}
         </div>
         {{--<div class="slider-on-mobile hidden-md hidden-lg">--}}
             {{--{{ Html::image('images/sliders/SMART-CITY-800x1500.jpg','',array('class'=>'slider-mobile hidden-md hidden-lg')) }}--}}

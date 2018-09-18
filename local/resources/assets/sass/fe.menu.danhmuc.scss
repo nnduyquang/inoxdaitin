@@ -3,16 +3,24 @@
     background-color: #F68C22;
     font-size: 15px;
     line-height: 1.8;
+    padding:6px 20px 4px 10px;
+    text-align: center;
     text-transform: uppercase;
-    font-weight: bold;
-    border-bottom: 1px solid #F68C22;
+    //font-weight: bold;
+    border-left: 8px solid #706363;
+    position: relative;
     span{
       color: white;
     }
     span:before{
-      content: "\f00b";
-      padding: 10px;
-      background-color: #706363;
+      position: absolute;
+      content: "";
+      //padding: 10px;
+      height: 100%;
+      width: 10px;
+      top: 0;
+      left: 0;
+      //background-color: #706363;
       color: #fff;
       display: inline-block;
       font: normal normal normal 14px/1 FontAwesome;
@@ -40,7 +48,8 @@
         display: block;
         text-decoration: none;
         color: #444;
-        font-weight: bold;
+        //font-weight: bold;
+        text-transform: uppercase;
         background-color: #E7E8EA;
         transition: background-color 1s ease-out;
       }
@@ -49,7 +58,7 @@
         background-color: #F68C22!important;
       }
       a:before{
-        content: "\f111";
+        content: "\f261";
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
         font-size: inherit;

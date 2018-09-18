@@ -168,6 +168,16 @@
   margin: 5px 0;
 }
 
+.trangchu-tag {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.trangchu-tag a {
+  color: #878585;
+}
+
 #tc-lienhe .tc-lienhe-info {
   background-color: #f68a1f;
   text-align: center;

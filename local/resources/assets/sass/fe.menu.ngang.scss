@@ -1,9 +1,12 @@
 #top-info {
-  background-color: #E7E8EA;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bolder;
-  font-size: 15px;
+  //background-color: #F68C22;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  //font-weight: bold;
+  font-size: 13px;
+  color: white;
   .top-info-left {
     float: left;
   }
@@ -13,14 +16,26 @@
 }
 
 #logo-top {
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 6px;
+  padding-bottom: 6px;
   img.logo-img {
-    width: 100%;
+    width: 300px;
+    height: auto;
+    margin-top: 18px;
+  }
+
+  img.logo-img2 {
+    width: 380px;
+    height: auto;
+    float: right;
   }
 }
 
 #menu-ngang {
   background-color: #F68C22;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   ul.menu-detail {
     display: block;
     float: left;
@@ -28,16 +43,19 @@
       display: inline-block;
       a {
         text-decoration: none;
-        padding: 15px 25px 10px;
+        padding: 14px 25px 11px;
         display: block;
         color: #fff;
         transition: all 0.2s ease-in-out 0s;
-        font-size: 13px;
+        font-size: 15px;
         text-transform: uppercase;
-        font-weight: bold;
+        //font-weight: bold;
       }
       a:hover {
-        background-color: #706363;
+        background-color: #626262;
+      }
+      a.active {
+        background-color: #626262;
       }
     }
   }
@@ -137,7 +155,7 @@
         font-weight: bold;
       }
       a:hover {
-        background-color: #706363;
+        background-color: #626262;
       }
     }
     li:hover{
