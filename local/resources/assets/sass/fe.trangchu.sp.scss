@@ -6,31 +6,51 @@
     text-transform: uppercase;
     font-weight: bold;
     font-family: Tahoma;
-    border-bottom: 1px solid #F68C22;
+    border-bottom: 1px solid #474445;
     margin-top: 10px;
-    span {
-      color: #444;
+    position: relative;
+    padding-top: 32px;
+    z-index: 10;
+    .left {
+      top: 0;
+      position: absolute;
+      color: white;
       display: inline-block;
-      padding: 0 10px 0 0;
+      left: 0px;
+      padding: 3px 10px;
+      background-color: #F68C22;
+      //color: #fff;
+      z-index: 12;
     }
-    span:before {
-      content: "\f00b";
-      padding: 10px;
-      background-color: #706363;
-      color: #fff;
-      display: inline-block;
-      font: normal normal normal 14px/1 FontAwesome;
-      font-size: inherit;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      transform: translate(0, 0);
-      margin-right: 10px;
+    .right {
+      top: 0;
+      position: absolute;
+      right: 0px;
+      padding: 6px 10px;
+      //background-color: #706363;
+      color: white;
     }
-    a {
-      float: right;
-      margin-right: 10px;
-    }
+  }
+  h3.header-title:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 186px;
+    background-color: #F68C22;
+    bottom: -1px;
+    left: 0;
+
+  }
+
+  h3.header-title:after{
+    content: '';
+    position: absolute;
+    height: 90%;
+    //width: 200px;
+    //background-color: #F68C22;
+    bottom: -1px;
+    left: 0;
+
   }
   .tc-list-sp {
     margin-top: 20px;

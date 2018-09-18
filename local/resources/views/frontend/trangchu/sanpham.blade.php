@@ -2,8 +2,8 @@
     <div class="col-md-12 tc-sanpham">
         <div class="row">
             <h3 class="header-title">
-                <span><a href="{{URL::to('san-pham/'.$data[0]['category']->path)}}">{{$data[0]['category']->name}}</a></span>
-                <a href="{{URL::to('san-pham/'.$data[0]['category']->path)}}">Xem Tất Cả</a>
+                <a class="left" href="{{URL::to('san-pham/'.$data[0]['category']->path)}}">{{$data[0]['category']->name}}</a>
+                <a class="right" href="{{URL::to('san-pham/'.$data[0]['category']->path)}}">Xem Tất Cả</a>
             </h3>
 
             <div class="col-md-12 tc-list-sp">
