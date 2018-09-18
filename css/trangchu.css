@@ -24,6 +24,7 @@
   padding: 3px 10px;
   background-color: #F68C22;
   z-index: 12;
+  border-left: 6px solid #474445;
 }
 
 .tc-sanpham h3.header-title .right, .tc-timkiem h3.header-title .right {
