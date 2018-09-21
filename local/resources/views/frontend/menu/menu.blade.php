@@ -9,7 +9,7 @@
 <div id="logo-top" class="col-md-12 hidden-sm hidden-xs" >
     <div class="row">
         <div class="container">
-            {{ Html::image('images/logo/logo.png','',array('class'=>'logo-img')) }}
+            {{ Html::image('images/logo/logo.jpg','',array('class'=>'logo-img')) }}
             {{ Html::image('images/bg/timthumb.png','',array('class'=>'logo-img2')) }}
         </div>
     </div>
