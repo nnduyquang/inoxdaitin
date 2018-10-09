@@ -1,4 +1,4 @@
-<div id="top-info" class="col-md-12 hidden-sm hidden-xs" style="background-image:url({{URL::asset('images/bg/in-gear-bgsteel.jpg')}});">
+<div id="top-info" class="col-md-12 hidden-sm hidden-xs" style="background-color:#051870;>
     <div class="row">
         <div class="container">
             <span class="top-info-right">GỌI CHÚNG TÔI : 0975.24.24.24 - A.DŨNG</span>
@@ -14,6 +14,7 @@
         </div>
     </div>
 </div>
+{{----}}
 <div id="menu-ngang" class="col-md-12 hidden-sm hidden-xs">
     <div class="container">
         <ul class="menu-detail">

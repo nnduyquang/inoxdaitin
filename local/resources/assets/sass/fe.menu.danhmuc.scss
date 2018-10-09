@@ -1,13 +1,13 @@
 #menu-danhmuc{
   h3{
-    background-color: #F68C22;
+    background-color: #162a86;
     font-size: 15px;
     line-height: 1.8;
     padding:6px 20px 4px 10px;
     text-align: center;
     text-transform: uppercase;
     //font-weight: bold;
-    border-left: 8px solid #706363;
+    border-left: 8px solid #F68C22;
     position: relative;
     span{
       color: white;
@@ -55,7 +55,7 @@
       }
       a:hover{
         color: white;
-        background-color: #F68C22!important;
+        background-color: #162a86!important;
       }
       a:before{
         content: "\f261";

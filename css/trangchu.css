@@ -22,9 +22,9 @@
   display: inline-block;
   left: 0px;
   padding: 3px 10px;
-  background-color: #F68C22;
+  background-color: #162a86;
   z-index: 12;
-  border-left: 6px solid #474445;
+  border-left: 6px solid #F68C22;
 }
 
 .tc-sanpham h3.header-title .right, .tc-timkiem h3.header-title .right {
@@ -88,7 +88,8 @@
 }
 
 .tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-btn, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-btn {
-  background: #706363;
+  margin-top: 10px;
+  background: #162a86;
   color: #fff;
   border-radius: 0;
   padding: 0 10px 0 0;
@@ -99,6 +100,9 @@
   text-align: center;
   border: 3px double #fff;
   font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .tc-sanpham .tc-list-sp .tc-one-sp a .tc-one-sp-btn:before, .tc-timkiem .tc-list-sp .tc-one-sp a .tc-one-sp-btn:before {
@@ -112,7 +116,7 @@
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   padding: 11px;
-  background: #F68A1F;
+  background: #F68C22;
   margin-right: 5px;
   font-size: 16px;
   float: left;
@@ -192,7 +196,7 @@
 }
 
 #tc-lienhe .tc-lienhe-info {
-  background-color: #f68a1f;
+  background-color: #031460;
   text-align: center;
   padding-top: 15px;
   padding-bottom: 15px;

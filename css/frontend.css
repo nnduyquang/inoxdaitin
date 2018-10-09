@@ -374,7 +374,7 @@ This class is added to the container
 }
 
 #menu-ngang {
-  background-color: #F68C22;
+  background-color: #162a86;
   margin-bottom: 5px;
 }
 
@@ -399,11 +399,11 @@ This class is added to the container
 }
 
 #menu-ngang ul.menu-detail li a:hover {
-  background-color: #626262;
+  background-color: #F68C22;
 }
 
 #menu-ngang ul.menu-detail li a.active {
-  background-color: #626262;
+  background-color: #F68C22;
 }
 
 #menu-ngang ul.menu-search {
@@ -425,14 +425,14 @@ This class is added to the container
   border-bottom-right-radius: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  background-color: #706363;
+  background-color: #bdbdbd;
   color: white;
   border: none;
 }
 
 #menu-ngang ul.menu-search li a {
   padding: 15px;
-  background-color: #5E5555;
+  background-color: #01124c;
   color: #fff;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -447,7 +447,7 @@ This class is added to the container
 }
 
 #menu-ngang-scroll {
-  background-color: #F68C22;
+  background-color: #162a86;
   margin-bottom: 20px;
 }
 
@@ -488,7 +488,7 @@ This class is added to the container
 
 #menu-ngang-scroll ul.menu-detail li > ul.sub-menu li a:hover {
   color: white;
-  background-color: #F68C22 !important;
+  background-color: #162a86 !important;
 }
 
 #menu-ngang-scroll ul.menu-detail li > ul.sub-menu li a:before {
@@ -565,13 +565,13 @@ This class is added to the container
 }
 
 #menu-danhmuc h3 {
-  background-color: #F68C22;
+  background-color: #162a86;
   font-size: 15px;
   line-height: 1.8;
   padding: 6px 20px 4px 10px;
   text-align: center;
   text-transform: uppercase;
-  border-left: 8px solid #706363;
+  border-left: 8px solid #F68C22;
   position: relative;
 }
 
@@ -623,7 +623,7 @@ This class is added to the container
 
 #menu-danhmuc ul li a:hover {
   color: white;
-  background-color: #F68C22 !important;
+  background-color: #162a86 !important;
 }
 
 #menu-danhmuc ul li a:before {
@@ -818,7 +818,7 @@ This class is added to the container
 
 #footer-infor {
   text-align: center;
-  background-color: #1e1d1d;
+  background-color: #031460;
   padding-top: 12px;
   padding-bottom: 10px;
 }
@@ -837,6 +837,6 @@ This class is added to the container
 }
 
 #footer-infor ul li a {
-  color: #F68A1F;
+  color: white;
   padding: 0px 10px;
 }

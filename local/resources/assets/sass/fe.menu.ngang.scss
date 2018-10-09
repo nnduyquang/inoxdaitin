@@ -34,7 +34,7 @@
 }
 
 #menu-ngang {
-  background-color: #F68C22;
+  background-color: #162a86;
   margin-bottom: 5px;
   ul.menu-detail {
     display: block;
@@ -52,10 +52,10 @@
         //font-weight: bold;
       }
       a:hover {
-        background-color: #626262;
+        background-color: #F68C22;
       }
       a.active {
-        background-color: #626262;
+        background-color: #F68C22;
       }
     }
   }
@@ -74,13 +74,13 @@
         border-bottom-right-radius: 0;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        background-color: #706363;
+        background-color: #bdbdbd;
         color: white;
         border: none;
       }
       a {
         padding: 15px;
-        background-color: #5E5555;
+        background-color: #01124c;
         color: #fff;
         display: inline-block;
         font: normal normal normal 14px/1 FontAwesome;
@@ -98,7 +98,7 @@
 }
 
 #menu-ngang-scroll {
-  background-color: #F68C22;
+  background-color: #162a86;
   margin-bottom: 20px;
   ul.menu-detail {
     display: block;
@@ -127,7 +127,8 @@
           }
           a:hover{
             color: white;
-            background-color: #F68C22 !important;
+            background-color: #162a86!important;
+            //background-color: #F68C22 !important;
           }
           a:before{
             content: "\F111";
